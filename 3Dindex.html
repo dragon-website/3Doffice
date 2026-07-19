@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-HK">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta name="viewport"
 content="width=device-width,initial-scale=1">
@@ -94,7 +95,7 @@ transition:.6s;
 .bar{
 width:280px;
 height:8px;
-background:#6095cd;
+background:#d4e0ec;
 border-radius:20px;
 overflow:hidden;
 margin-top:20px;
@@ -103,7 +104,7 @@ margin-top:20px;
 .fill{
 height:100%;
 width:0;
-background:#5891ec;
+background:#5d6d59;
 transition:.1s;
 
 }
@@ -113,14 +114,14 @@ transition:.1s;
 margin-top:15px;
 font-size:24px;
 font-weight:bold;
-color:rgb(19, 151, 207);
+color:#5d6d59;
 
 }
 </style>
 </head>
 <body>
 <div id="loading">
-<h2 style="color:rgb(19, 151, 207);">
+<h2 style="color:#5d6d59;">
 Dragon Development Engineering Co. Ltd.
 </h2>
 <div class="bar">
@@ -138,7 +139,6 @@ Dragon Development Engineering Co. Ltd.
 <small>
 Interactive 3D Viewer
 </small>
-
 </div>
 <model-viewer
   id="viewer"
@@ -153,13 +153,11 @@ Interactive 3D Viewer
   camera-orbit="45deg 65deg auto"
   field-of-view="30deg">
 </model-viewer>
-
 <div class="bottom">
 
 🖱 拖曳旋轉　|　滾輪縮放　|　右鍵平移
 
 </div>
-
 <script>
 const viewer=document.querySelector("#viewer");
 const fill=document.querySelector("#fill");
